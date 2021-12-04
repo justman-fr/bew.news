@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+---
+
+
+
+<style>
+    {% include "src/assets/css/scrollDown.css" %}
+    {% cssBackground "./static/img/"~hero, "#hero", [600, 800, 900, 1100, 1500, 2000] %}
+</style>
+
+<section id="hero" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+    <!-- Overlay Background + Center Control -->
+    <div class="h-screen bg-opacity-60 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+        <div class="mx-2 text-center">
+            <h1 class="text-gray-100 font-extrabold text-2xl xs:text-5xl md:text-6xl">
+                {{ title }}
+            </h1>
+            <div class="text-gray-200 py-20 text-xl xs:text-4xl md:text-5xl leading-tight">
+                {{ subtitle }}
+            </div>
+            <div class="inline-flex ">
+                <a class="mouse " href="#content"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container mx-auto pt-24" id="content">
+
+    <div class="text-sm">
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        {%- for tag in tags | filterTagList -%}
+            {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
+            <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+        {%- endfor %}
+    </div>
+    {{ content | safe }}
+</div>
