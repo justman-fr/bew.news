@@ -7,6 +7,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const path = require('path');
+const pluginToc = require("eleventy-plugin-toc");
 
 const Image = require("@11ty/eleventy-img");
 
@@ -60,6 +61,7 @@ async function imageCssBackground (src, selector, widths){
 module.exports = function (eleventyConfig) {
     // Add plugins
     eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(pluginToc);
     eleventyConfig.addPlugin(pluginSyntaxHighlight);
     eleventyConfig.addPlugin(pluginNavigation);
 
@@ -83,6 +85,20 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("search", searchFilter);
     eleventyConfig.addCollection("results", (collection) => {
         return [...collection.getFilteredByGlob("**/*.md")];
+    });
+
+    // Extract reading time
+    eleventyConfig.addNunjucksFilter("readingTime", (wordcount) => {
+        let readingTime = Math.ceil(wordcount / 220);
+        if (readingTime === 1) {
+            return readingTime + " minute";
+        }
+        return readingTime + " minutes";
+    });
+
+    // Extract word count
+    eleventyConfig.addNunjucksFilter("formatWords", (wordcount) => {
+        return wordcount.toLocaleString("en");
     });
 
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string

@@ -136,3 +136,56 @@ nav .darkModeAction svg:hover {
   transform: rotate(-135deg);
   bottom: 0;
 }
+
+#toc {
+  transition: top 0.2s ease-in-out;
+  animation: fadeup-content 0.8s;
+}
+
+nav.toc {
+  margin-left: 8px;
+}
+
+nav.toc ol {
+  @apply list-none;
+  transition: top 0.4s ease;
+}
+
+nav.toc li {
+  @apply leading-8;
+}
+
+nav.toc a {
+  @apply no-underline block;
+  padding-left: 18px;
+  margin-left: -9px;
+}
+
+nav.toc a:active,
+nav.toc a:hover {
+  @apply text-indigo-900 dark:text-indigo-300;
+  border-left: 1px solid;
+  padding-left: 17px;
+}
+
+nav.toc a.active {
+  @apply text-indigo-900 dark:text-indigo-300 font-bold;
+  border-left: 2px solid;
+  padding-left: 16px;
+}
+
+nav.toc ol ol a,
+nav.toc ol ol a:hover,
+nav.toc ol ol a:active,
+nav.toc ol ol a.active {
+  padding-left: 26px;
+}
+
+nav.toc ol ol a:active,
+nav.toc ol ol a:hover {
+  padding-left: 25px;
+}
+
+nav.toc ol ol a.active {
+  padding-left: 24px;
+}
