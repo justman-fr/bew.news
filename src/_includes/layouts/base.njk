@@ -29,7 +29,7 @@
                 <span class="navigation__icon">&nbsp;</span>
             </label>
             <div class="navigation__background">&nbsp;</div>
-            <nav class="navigation__nav">
+            <div class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="{{ "/" | url }}" class="navigation__link">Accueil</a> </li>
                     {%- for entry in collections.all | eleventyNavigation %}
@@ -38,7 +38,7 @@
                                     href="{{ entry.url | url }}">{{ entry.title }}</a></li>
                     {%- endfor %}
                 </ul>
-            </nav>
+            </div>
         </div>
         <div class=" flex items-center">
             {% include "components/logo.njk" %}

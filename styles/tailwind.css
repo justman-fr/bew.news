@@ -61,6 +61,7 @@ nav .darkModeAction svg:hover {
 .navigation__list {
   list-style: none;
   position: absolute;
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -91,6 +92,11 @@ nav .darkModeAction svg:hover {
   opacity: 1;
   width: 100%;
 }
+
+.navigation__checkbox:checked ~ .navigation__nav .navigation__list {
+  display: block;
+}
+
 .navigation__icon {
   position: relative;
   margin-top: 20px;
