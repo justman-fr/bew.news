@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title: Bienvenue dans la Matrice
 subtitle: Pillule bleue ou pillule rouge ?
 
-hero: matrix-re.jpg
+hero: matrix.jpg
 eleventyNavigation:
   key: A propos
   order: 3
