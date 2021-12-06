@@ -64,17 +64,18 @@ templateClass: tmpl-post
                 </div>
             </div>
             <div class="inline-flex ">
-                <a class="mouse " href="#content"></a>
+                <a class="mouse scroll" href="#content"></a>
             </div>
         </div>
     </div>
 </section>
 
 
-<div class="container grid grid-flow-col grid-cols-auto xl:grid-cols-topbar max-w-content mx-auto pt-24" id="content">
+<div class="container grid grid-flow-col grid-cols-auto xl:grid-cols-topbar max-w-content mx-auto pt-24" >
 
 
-    <article class="min-w-0">
+    <article class="min-w-0" id="content">
+        <a href="#content"></a>
 
     {{ content | safe }}
 

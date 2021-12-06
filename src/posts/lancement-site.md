@@ -9,7 +9,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-## Un retour au source !
+## Un retour au source
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a odio neque. Aliquam eleifend velit non vehicula consectetur. Duis sed pretium sem, et sagittis massa. Nam orci enim, pellentesque eu mauris hendrerit, vestibulum rutrum lectus. Etiam id bibendum est, interdum ultrices lectus. Curabitur condimentum non erat at dictum. Fusce euismod, neque in pharetra finibus, sem mauris commodo sem, non luctus dolor justo sit amet odio. Morbi consequat ex turpis, quis interdum ligula efficitur a. Ut lacinia at metus nec finibus. Mauris in varius lacus, in rutrum nulla. Maecenas eu iaculis massa, at luctus odio. Quisque nec nisl a risus ultrices aliquam. Sed malesuada non libero vitae facilisis. Mauris a mi in ipsum porttitor posuere. Suspendisse ac ligula diam.
 
@@ -17,7 +17,7 @@ Morbi rhoncus at nisl sed lacinia. Duis convallis, ligula id luctus rhoncus, sem
 
 Phasellus maximus varius volutpat. Pellentesque pretium nibh non orci aliquam, nec tincidunt lectus elementum. Nunc metus nisl, varius fringilla eleifend at, ultricies eget felis. Fusce porta pharetra tortor, vel accumsan diam. Suspendisse vitae libero tincidunt dolor porttitor interdum. Curabitur id condimentum dolor. Quisque euismod nisl sem. Quisque ac pellentesque tellus. Quisque rhoncus a tellus non posuere. Sed condimentum turpis vestibulum tristique faucibus. In lectus lacus, blandit et consequat hendrerit, cursus imperdiet metus. 
 
-## La performance avant tout !
+## La performance avant tout
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a odio neque. Aliquam eleifend velit non vehicula consectetur. Duis sed pretium sem, et sagittis massa. Nam orci enim, pellentesque eu mauris hendrerit, vestibulum rutrum lectus. Etiam id bibendum est, interdum ultrices lectus. Curabitur condimentum non erat at dictum. Fusce euismod, neque in pharetra finibus, sem mauris commodo sem, non luctus dolor justo sit amet odio. Morbi consequat ex turpis, quis interdum ligula efficitur a. Ut lacinia at metus nec finibus. Mauris in varius lacus, in rutrum nulla. Maecenas eu iaculis massa, at luctus odio. Quisque nec nisl a risus ultrices aliquam. Sed malesuada non libero vitae facilisis. Mauris a mi in ipsum porttitor posuere. Suspendisse ac ligula diam.
 
@@ -26,7 +26,7 @@ Morbi rhoncus at nisl sed lacinia. Duis convallis, ligula id luctus rhoncus, sem
 Phasellus maximus varius volutpat. Pellentesque pretium nibh non orci aliquam, nec tincidunt lectus elementum. Nunc metus nisl, varius fringilla eleifend at, ultricies eget felis. Fusce porta pharetra tortor, vel accumsan diam. Suspendisse vitae libero tincidunt dolor porttitor interdum. Curabitur id condimentum dolor. Quisque euismod nisl sem. Quisque ac pellentesque tellus. Quisque rhoncus a tellus non posuere. Sed condimentum turpis vestibulum tristique faucibus. In lectus lacus, blandit et consequat hendrerit, cursus imperdiet metus. 
 
 
-## La performance avant tout !
+## La performance avant tout
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a odio neque. Aliquam eleifend velit non vehicula consectetur. Duis sed pretium sem, et sagittis massa. Nam orci enim, pellentesque eu mauris hendrerit, vestibulum rutrum lectus. Etiam id bibendum est, interdum ultrices lectus. Curabitur condimentum non erat at dictum. Fusce euismod, neque in pharetra finibus, sem mauris commodo sem, non luctus dolor justo sit amet odio. Morbi consequat ex turpis, quis interdum ligula efficitur a. Ut lacinia at metus nec finibus. Mauris in varius lacus, in rutrum nulla. Maecenas eu iaculis massa, at luctus odio. Quisque nec nisl a risus ultrices aliquam. Sed malesuada non libero vitae facilisis. Mauris a mi in ipsum porttitor posuere. Suspendisse ac ligula diam.
 
