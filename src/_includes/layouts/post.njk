@@ -71,10 +71,10 @@ templateClass: tmpl-post
 </section>
 
 
-<div class="container mx-auto pt-24" id="content">
+<div class="container grid grid-flow-col grid-cols-auto xl:grid-cols-topbar max-w-content mx-auto pt-24" id="content">
 
 
-    <main class="min-w-0">
+    <article class="min-w-0">
 
     {{ content | safe }}
 
@@ -93,11 +93,11 @@ templateClass: tmpl-post
         {%- endif %}
     {%- endif %}
 
-    </main>
+    </article>
 
 
 
-    <aside class="hidden xl:block w-72 float-right">
+    <aside class="hidden xl:block w-150 ">
         {% include "src/_includes/components/toc.njk" %}
     </aside>
 

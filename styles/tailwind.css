@@ -144,6 +144,7 @@ nav .darkModeAction svg:hover {
 
 nav.toc {
   margin-left: 8px;
+
 }
 
 nav.toc ol {
@@ -188,4 +189,40 @@ nav.toc ol ol a:hover {
 
 nav.toc ol ol a.active {
   padding-left: 24px;
+}
+
+h2 {
+  @apply text-xl my-6;
+}
+
+h3 {
+  @apply text-lg my-6;
+}
+
+article ol {
+  @apply list-decimal pl-10 leading-8;
+}
+
+ article ul {
+  @apply list-disc pl-10 leading-8;
+}
+
+table {
+  @apply table-auto w-full;
+}
+
+article a {
+  @apply text-indigo-900 dark:text-indigo-300 underline;
+}
+
+article p {
+  @apply pb-4 pt-2 ;
+}
+
+article blockquote {
+  @apply border-l-2 border-gray-300 dark:border-gray-600 my-4;
+}
+
+article blockquote > p {
+  @apply ml-4 py-2;
 }
