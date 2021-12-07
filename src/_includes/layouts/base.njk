@@ -16,7 +16,6 @@
     {% set js %}
         {% include "src/assets/js/darkMode.js" %}
         {% include "src/assets/js/search.js" %}
-        {% include "src/assets/js/scroll.js" %}
     {% endset %}
     <script defer>{{ js | jsmin | safe }}</script>
 </head>

@@ -191,6 +191,11 @@ nav.toc ol ol a.active {
   padding-left: 24px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 h2 {
   @apply text-xl my-6;
 }
