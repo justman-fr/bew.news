@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Bienvenue dans la Matrice
-subtitle: Pillule bleue ou pillule rouge ?
+subtitle: Pilule bleue ou pilule rouge ?
 
 hero: matrix.jpg
 eleventyNavigation:
