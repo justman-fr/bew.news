@@ -221,7 +221,7 @@ article a {
 }
 
 article p {
-  @apply pb-4 pt-2 ;
+  @apply py-2 ;
 }
 
 article blockquote {
