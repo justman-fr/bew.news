@@ -70,10 +70,10 @@ layout: layouts/base.njk
 </section>
 
 
-<div class="container mx-auto pt-24" id="content">
+<div class="container grid grid-flow-col grid-cols-auto xl:grid-cols-topbar max-w-content mx-auto pt-24">
 
-    <article>
-
+    <article class="min-w-0" id="content">
+        <a href="#content"></a>
         {%- for tag in tags | filterTagList -%}
             {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
             <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
@@ -81,5 +81,9 @@ layout: layouts/base.njk
         {{ content | safe }}
 
     </article>
+
+    <aside class="hidden xl:block w-150 ">
+        {% include "src/_includes/components/toc.njk" %}
+    </aside>
 
 </div>
