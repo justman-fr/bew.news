@@ -19,6 +19,11 @@ Cela a été une expérience incroyable ! J’en ai fait mon métier et aujourd�
 
 Jusqu'au début des années 2000, il y'avait beaucoup d'amateurisme, de passionné. Les sites commerciaux étaient rares, le webmarketing presque inexistant.
 
+
+{% image "./static/img/web-3.jpeg", "Web 3.0", "(min-width: 30em) 50vw, 100vw" %}
+<div class="caption">C'est beau, n'est-ce pas ?</div>
+
+
 Chaque kilo octect de gagné était une victoire à l'époque du 56k. Internet Explorer 6 nous pourrissait la vie en termes de développement et d'intégration mais Firefox est venu à notre rescousse.
 
 Les années ont passé et le web s'est professionnalisé. Cela a permis de le standardiser d'avantage, c'est une bonne chose.
@@ -41,7 +46,9 @@ A cela, on voit également émerger de plus en plus de mauvaises pratiques sur l
 
 J'aimerai aborder sur ce site des articles sur les déviances du Web même si d'autres sites le font de façon remarquable. Mais au fond, il y'a de la place pour tout le monde. Je vais pouvoir vous partagez mes mauvaises pratiques car je suis loin d'être exemplaire.
 
-## Malgré ce tableau assez sombre, il existe des solutions alternatives
+Malgré ce tableau assez sombre...
+
+## Il existe des solutions alternatives
 
 Certains acteurs comme Framasoft, la quadrature du net, tous les contributeurs qui partagent leur projet sur un modèle Open Source et j'en passe nous montrent différentes voies.
 

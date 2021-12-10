@@ -157,7 +157,7 @@ nav.toc li {
 }
 
 nav.toc a {
-  @apply no-underline block;
+  @apply no-underline block text-base;
   padding-left: 18px;
   margin-left: -9px;
 }
@@ -197,16 +197,14 @@ html {
 }
 
 h2 {
-  @apply text-xl my-6;
+  @apply text-2xl font-bold my-6 ;
 }
 
 h3 {
   @apply text-lg my-6;
 }
 
-article {
 
-}
 
 article ol {
   @apply list-decimal pl-10 leading-8;
@@ -224,8 +222,18 @@ article a {
   @apply text-indigo-900 dark:text-indigo-300 underline;
 }
 
+
+
 article p {
-  @apply py-2 ;
+  @apply py-2 text-lg;
+}
+
+article img {
+  @apply m-auto;
+}
+
+article .caption {
+  @apply text-center italic text-sm pb-5;
 }
 
 article blockquote {
