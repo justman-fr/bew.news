@@ -33,9 +33,9 @@ Ce n'est pas moi qui le dit, c'est l'un de ces créateurs, Tim Berners-Lee. Pour
 
 On assiste effectivement depuis ces dernières années a une concentration des plateformes dominantes : Google pour la recherche, Facebook pour les réseaux sociaux, Youtube pour les vidéos, Amazon, Microsoft et Google pour l'hébergement, Google Analytics pour les statistiques des sites... Si un de ces services tombent, c'est une grosse partie du web qui est impacté.
 
-A cette concentration, ces géants du Web absorbent une grosse partie de nos données personnelles en nous appatant avec des services gratuits pour les revendre à prix d'or. Le buisness passe avant l'éthique... 
+A cette concentration, ces géants du Web absorbent une grosse partie de nos données personnelles en nous appâtant avec des services gratuits pour les revendre à prix d'or. Le business passe avant l'éthique... 
 
-On peut également reprocher à ces plateformes de menacer nos sociétés ou les individus : manipulation de l'opinion publique (cambridge analytica), le cyber harcèlement chez les ados (et les adultes), les troubles psychologiques chez les plus jeunes liés à l'addiction, le droit à l'oubli baffoué et j'en passe... Malheureusement, la réglementation a souvent un train de retard. Par exemple quelles sont les mesures prises pour vérifier qu'un enfant de moins de 13 ans ne puissent pas s'inscrire sur un réseau social ?
+On peut également reprocher à ces plateformes de menacer nos sociétés ou les individus : manipulation de l'opinion publique (cambridge analytica), le cyber harcèlement chez les ados (et les adultes), les troubles psychologiques chez les plus jeunes liés à l'addiction, le droit à l'oubli bafoué et j'en passe... Malheureusement, la réglementation a souvent un train de retard. Par exemple quelles sont les mesures prises pour vérifier qu'un enfant de moins de 13 ans ne puissent pas s'inscrire sur un réseau social ?
 
 A cela, on voit également émerger de plus en plus de mauvaises pratiques sur les sites : dark pattern, sponsoring déguisé ou influenceur, l'allégeance à certaines plateformes...
 
@@ -43,9 +43,9 @@ J'aimerai aborder sur ce site des articles sur les déviances du Web même si d'
 
 ## Malgré ce tableau assez sombre, il existe des solutions alternatives
 
-Certains acteurs comme Framasoft, la quadrature du net, tous les contributeurs qui partagent leur projet sur un modèle Open Source et j'en passe nous montrent une voie différente.
+Certains acteurs comme Framasoft, la quadrature du net, tous les contributeurs qui partagent leur projet sur un modèle Open Source et j'en passe nous montrent différentes voies.
 
 Et le but de ce site est également de montrer ces alternatives.
 
-Dénoncer c'est facile, mais avancer, c'est mieux :)
+> La Critique Est Aisée, Mais l'Art Est Difficile
 

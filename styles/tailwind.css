@@ -204,6 +204,10 @@ h3 {
   @apply text-lg my-6;
 }
 
+article {
+
+}
+
 article ol {
   @apply list-decimal pl-10 leading-8;
 }

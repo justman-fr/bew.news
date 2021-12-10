@@ -30,6 +30,10 @@
             </label>
             <div class="navigation__background">&nbsp;</div>
             <div class="navigation__nav">
+                <div class="text-right fixed right-5 top-5"
+                     >
+                {% include "components/darkMode.njk" %}
+                </div>
                 <ul class="navigation__list">
                     <li class="navigation__item"><a href="{{ "/" | url }}" class="navigation__link">Accueil</a> </li>
                     {%- for entry in collections.all | eleventyNavigation %}
