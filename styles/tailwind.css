@@ -21,7 +21,12 @@ nav .darkModeAction svg:hover {
   stroke: #9ca3af;
 }
 
-.navigation__checkbox {
+
+.navigation {
+  width: 30px;
+}
+
+.navigation__checkbox, .search__checkbox {
   display: none;
 }
 .navigation__button {
@@ -68,6 +73,11 @@ nav .darkModeAction svg:hover {
   text-align: center;
   width: 100%;
 }
+
+.darkModeMobile {
+  display: none;
+}
+
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
@@ -94,6 +104,10 @@ nav .darkModeAction svg:hover {
 }
 
 .navigation__checkbox:checked ~ .navigation__nav .navigation__list {
+  display: block;
+}
+
+.navigation__checkbox:checked ~ .navigation__nav .darkModeMobile {
   display: block;
 }
 
