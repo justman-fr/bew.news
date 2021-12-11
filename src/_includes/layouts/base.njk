@@ -22,8 +22,9 @@
 <body class="dark:bg-gray-900 dark:text-gray-100 bg-gray-100">
 
 <nav id="header" class="fixed w-full z-30 top-0 text-white bg-gray-800" style="background-color: #121B4F">
-    <div class="w-full container mx-auto flex  items-center justify-center flex-wrap items-center justify-between mt-0 py-2 mobile-top-bar">
-        <div class=" navigation  lg:hidden">
+    <div id="mobile-top-bar"
+         class="w-full container mx-auto flex  items-center justify-center flex-wrap items-center justify-between mt-0 py-2 mobile-top-bar">
+        <div class=" navigation  lg:hidden" id="navigationMobile">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
                 <span class="navigation__icon">&nbsp;</span>
@@ -31,11 +32,11 @@
             <div class="navigation__background">&nbsp;</div>
             <div class="navigation__nav">
                 <div class="text-right fixed right-5 top-5 darkModeMobile"
-                     >
-                {% include "components/darkMode.njk" %}
+                >
+                    {% include "components/darkMode.njk" %}
                 </div>
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="{{ "/" | url }}" class="navigation__link">Accueil</a> </li>
+                    <li class="navigation__item"><a href="{{ "/" | url }}" class="navigation__link">Accueil</a></li>
                     {%- for entry in collections.all | eleventyNavigation %}
                         <li class="navigation__item{% if entry.url == page.url %} nav-item-active{% endif %} mr-3"><a
                                     class="navigation__link"
@@ -44,14 +45,24 @@
                 </ul>
             </div>
         </div>
-        <div class="   ">
+        <div id="logoMobile">
             {% include "components/logo.njk" %}
         </div>
         <div class=" lg:hidden ">
-            <input type="checkbox" class="search__checkbox" id="navi-toggle">
-            <svg viewBox="0 0 32 32" class="block align-middle h-12 leading-12 mr-3 py-3 pt-3" >
-                <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z" id="XMLID_223_" fill="white"/>
-            </svg>
+            <div id="search-box-bar-mobile" class="hidden sm:inline-block mr-6 ml-10 sm:mx-0  col-span-2 sm:col-auto">
+                <input  aria-label="Search" x-data="{ isOpen: true }" x-bind:class="{ 'hidden': !isOpen }" type="search" placeholder="Rechercher..." class="ml-2 mr-2 w-60 bg-gray-50 dark:bg-gray-700 appearance-none border dark:border-gray-700 rounded py-2 px-2 placeholder-gray-300 leading-tight focus:ring-4 focus:ring-blue-200 dark:focus:ring-gray-700 ring-opacity-50 border-gray-200" id="searchField">
+                <a href="javascript:;" id="hideSearch">masquer</a>
+                <ul tabindex="0" class="bg-white dark:bg-gray-500 z-50 shadow-md p-0 w-full list-none m-0 absolute left-0 md:right-0 bg-white  mt-1 top-100 z-50" id="searchResults"></ul>
+                <div class="hidden container shadow-md list-none p-4 m-0 absolute left-0 md:right-0 bg-white rounded mt-1 border top-100 divide-y divide-gray-300 z-2" id="noResultsFound">
+                    <p>Pas de résultat</p>
+                </div>
+            </div>
+            <a href="javascript:;" id="searchMobile">
+                <svg viewBox="0 0 32 32" class="block align-middle h-12 leading-12 mr-3 py-3 pt-3">
+                    <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+                          id="XMLID_223_" fill="white"/>
+                </svg>
+            </a>
         </div>
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
              id="nav-content">
@@ -61,7 +72,7 @@
         </div>
     </div>
 </nav>
-<div class="fixed w-full z-20 bg-gradient-to-r pt-9 from-pink-500 via-red-500 to-blue-500 "> the bew</div>
+
 <main class="  pb-12 {% if templateClass %}{{ templateClass }}{% endif %}">
 
     {{ content | safe }}

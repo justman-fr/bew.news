@@ -26,7 +26,7 @@ nav .darkModeAction svg:hover {
   width: 30px;
 }
 
-.navigation__checkbox, .search__checkbox {
+.navigation__checkbox {
   display: none;
 }
 .navigation__button {
@@ -256,4 +256,12 @@ article blockquote {
 
 article blockquote > p {
   @apply ml-4 py-2;
+}
+
+/**
+Search
+ */
+
+#search-box-bar-mobile li, #search-box-bar li {
+  @apply p-1;
 }
