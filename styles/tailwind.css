@@ -21,6 +21,15 @@ nav .darkModeAction svg:hover {
   stroke: #9ca3af;
 }
 
+#scroll-progress {
+  @apply bg-gradient-to-r from-pink-500 via-red-500 to-blue-500  ;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  height: 4px;
+  z-index: 1000;
+}
+
 
 .navigation {
   width: 30px;

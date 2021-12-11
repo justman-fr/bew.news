@@ -16,11 +16,12 @@
     {% set js %}
         {% include "src/assets/js/darkMode.js" %}
         {% include "src/assets/js/search.js" %}
+        {% include "src/assets/js/progress.js" %}
     {% endset %}
     <script defer>{{ js | jsmin | safe }}</script>
 </head>
 <body class="dark:bg-gray-900 dark:text-gray-100 bg-gray-100">
-
+<div id="scroll-progress"></div>
 <nav id="header" class="fixed w-full z-30 top-0 text-white bg-gray-800" style="background-color: #121B4F">
     <div id="mobile-top-bar"
          class="w-full container mx-auto flex  items-center justify-center flex-wrap items-center justify-between mt-0 py-2 mobile-top-bar">
