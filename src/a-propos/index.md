@@ -54,5 +54,5 @@ Certains acteurs comme Framasoft, la quadrature du net, tous les contributeurs q
 
 Et le but de ce site est également de montrer ces alternatives.
 
-> La Critique Est Aisée, Mais l'Art Est Difficile
+> La critique est aisée, mais l'Art est difficile
 

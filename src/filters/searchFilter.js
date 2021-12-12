@@ -36,7 +36,7 @@ module.exports = function (collection) {
 
     // remove short and less meaningful words
     var result = dedupedStr.replace(
-      /\b(\.|\,|\<;|the|a|an|and|am|you|I|to|if|of|off|me|my|on|in|it|is|at|as|we|do|be|has|but|was|so|no|not|or|up|for)\b/gi,
+      /\b(\.|\,|\<;|le|a|un|et|pas|tu|je|ni|si|car|tu|moi|il|elle|dans|sur|par|ai|est|nous|vous|non|oui|mais|ou|donc|or|cas|or|up|for)\b/gi,
       ""
     );
     //remove newlines, and punctuation

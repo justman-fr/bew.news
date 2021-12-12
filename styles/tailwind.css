@@ -305,6 +305,6 @@ article blockquote > p {
 Search
  */
 
-#search-box-bar-mobile li, #search-box-bar li {
-    @apply p-1;
+#search-box-bar li {
+    @apply px-1;
 }
