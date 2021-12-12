@@ -48,7 +48,7 @@ J'aimerai aborder sur ce site des articles sur les déviances du Web même si d'
 
 Malgré ce tableau assez sombre...
 
-## Il existe des solutions alternatives
+## Il existe des alternatives
 
 Certains acteurs comme Framasoft, la quadrature du net, tous les contributeurs qui partagent leur projet sur un modèle Open Source et j'en passe nous montrent différentes voies.
 
