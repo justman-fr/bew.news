@@ -4,7 +4,7 @@ subtitle: Respectueuses de la vie privée
 description: This is a post on My Blog about agile frameworks.
 date: 2021-12-13
 
-cover: alternative-google-analytics.jpg
+cover: alternatives-google-analytics.jpg
 tags:
   - site
 layout: layouts/post.njk
