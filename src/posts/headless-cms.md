@@ -1,7 +1,7 @@
 ---
 title: Les CMS Headless
-subtitle: J'ai perdu la tête, depuis que j'ai vu Suzette
-description: This is a post on My Blog about agile frameworks.
+subtitle: TEst
+description: Les CMS Headless ont le vent en poupe ces derniers temps. Nous allons voir ensemble
 date: 2021-12-13
 
 cover: headless-cms.jpg
