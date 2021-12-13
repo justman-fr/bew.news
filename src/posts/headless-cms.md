@@ -1,10 +1,10 @@
 ---
-title: Les alternatives  à Google Analytics
-subtitle: Respectueuses de la vie privée
+title: Les CMS Headless
+subtitle: J'ai perdu la tête, depuis que j'ai vu Suzette
 description: This is a post on My Blog about agile frameworks.
 date: 2021-12-13
 
-cover: alternative-google-analytics.jpg
+cover: headless-cms.jpg
 tags:
   - site
 layout: layouts/post.njk
