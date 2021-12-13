@@ -6,7 +6,10 @@ date: 2021-12-13
 
 cover: headless-cms.jpg
 tags:
-  - site
+  - strapi
+  - headless
+  - directus
+  - cms
 layout: layouts/post.njk
 ---
 
