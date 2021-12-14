@@ -20,7 +20,7 @@ Cela a été une expérience incroyable ! J’en ai fait mon métier et aujourd�
 Jusqu'au début des années 2000, il y'avait beaucoup d'amateurisme, de passionné. Les sites commerciaux étaient rares, le webmarketing presque inexistant.
 
 
-{% image "./static/img/web-3.jpeg", "Web 3.0", "(min-width: 30em) 50vw, 100vw" %}
+{% image "./static/img/web-3.jpeg", "Web 3.0", "", "(min-width: 30em) 50vw, 100vw" %}
 <div class="caption">C'est beau, n'est-ce pas ?</div>
 
 

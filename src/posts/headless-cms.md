@@ -1,9 +1,10 @@
 ---
 title: Les CMS Headless
-subtitle: TEst
+subtitle: J'ai perdu la tête, depuis que j'ai vu Suzette
 description: Les CMS Headless ont le vent en poupe ces derniers temps. Nous allons voir ensemble
 date: 2021-12-13
-
+card: image
+author: Dany Pas Brillant
 cover: headless-cms.jpg
 tags:
   - strapi

@@ -1,37 +1,67 @@
 <section class="container mt-12 ">
-    <div class=" px-5 pb-24 mx-auto">
-        <div class="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-2">
+    <div class="  flex-1">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap md:-mx-3">
+                {% for post in postslist | reverse %}
 
-            {% for post in postslist | reverse %}
-                <div class="p-4 pb-12 md:w-1/2 xl:w-1/3 sm:mb-0">
-                    <div class="relative flex h-60 overflow-hidden  rounded-lg shadow-md hover:shadow-lg">
-                        <a class="" href="{{ post.url | url }}">
-                            {% if post.data.cover %}{% image "./static/img/"~post.data.cover, "Verifications et contrôles", "(min-width: 30em) 50vw, 100vw" %}{% else %}
-                                <img class="absolute inset-0 object-cover {{ post.data.images.align }} w-full h-full"
-                                     src="/assets/images/no-image.jpg" alt="">
-                            {% endif %}
-                        </a>
-                    </div>
-                    <h3 class="mt-4 {{ colors.headingsCustom or colors.headingsDefault }}">
-                        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-                    </h3>
-                    <small>
-                        {# Used conditionals here to keep control at the template levels rather than at the component level.  #}
-                        {# Display the Author block if structure.g_showAuthors is true (default) #}
-                    </small>
-                    <div class="{{ colors.excerptCustom or colors.excerptDefault }}">
-                        {{ post.data.excerpt }}
-                    </div>
 
-                    <div class="pt-2">
-                        {% set tags = post.data.tags %}
+                  {% if post.data.card === 'image'%}
 
-                    </div>
-                </div>
-            {% endfor %}
+                      <div class="md:w-1/2 px-3 mb-6 w-full">
+                          <a href="{{ post.url | url }}" class="flex w-full h-full flex-col flex-wrap bg-cover bg-no-repeat bg-center rounded overflow-hidden hover:scale-105 transition duration-500 "
+                             style="background-image:url({% imageSrc "./static/img/"~post.data.cover %})">
+                              <div class="bg-opacity-50 bg-black  p-5">
+                              <h2 class="text-white text-lg mb-2">{{ post.data.title }}</h2>
+                              <p class="text-white opacity-90">{{ post.data.subtitle }}</p>
+                              <div class="flex flex-wrap justify-between items-center mt-auto pt-6">
+                                  <div class="inline-flex items-center">
+                                      <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                                          <img src="https://randomuser.me/api/portraits/women/2.jpg"/>
+                                      </div>
+                                      <div class="flex-1 pl-2">
+                                          <p class="text-white mb-1">{% if post.data.author %}{{ post.data.author }}{% else %}JustMan{% endif %}</p>
+                                          <p class="text-white opacity-80 text-xs">{{ post.data.date | readableDate }}</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              </div>
+                          </a>
+                      </div>
 
+                  {% else%}
+
+                      <div class="md:w-1/2 px-3 mb-6 w-full">
+                          <a href="{{ post.url | url }}" class="flex w-full h-full flex-wrap bg-gray-800 overflow-hidden rounded hover:scale-105 transition duration-500">
+                              <div class="w-full sm:w-2/6">
+                                  {% if post.data.cover %} <img class="object-cover h-full w-full" src="{% imageSrc "./static/img/"~post.data.cover, "400" %}" alt="{{ post.data.title }}" />{% else %}
+                                      <img class="object-cover h-full w-full"
+                                           src="/assets/images/no-image.jpg" alt="">
+                                  {% endif %}
+                              </div>
+                              <div class="w-full sm:w-4/6 p-5">
+                                  <h2 class="text-white leading-normal text-lg mb-2">{{ post.data.title }} </h2>
+                                  <p class="text-white opacity-50">{{ post.data.subtitle }}</p>
+                                  <div class="flex flex-wrap justify-between items-center mt-6">
+                                      <div class="inline-flex items-center">
+                                          <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                                              <img src="https://randomuser.me/api/portraits/men/5.jpg"/>
+                                          </div>
+                                          <div class="flex-1 pl-2">
+                                              <p class="text-white mb-1">{% if post.data.author %}{{ post.data.author }}{% else %}JustMan{% endif %}</p>
+                                              <p class="text-white opacity-80 text-xs">{{ post.data.date | readableDate }}</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                  {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
+
+
 </section>
 
 

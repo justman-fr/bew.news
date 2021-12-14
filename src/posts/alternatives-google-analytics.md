@@ -3,7 +3,7 @@ title: Les alternatives  à Google Analytics
 subtitle: Respectueuses de la vie privée
 description: This is a post on My Blog about agile frameworks.
 date: 2021-12-14
-
+author: Don't be evil
 cover: alternatives-google-analytics.jpg
 tags:
   - site

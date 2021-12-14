@@ -11,7 +11,7 @@ const pluginToc = require("eleventy-plugin-toc");
 
 const Image = require("@11ty/eleventy-img");
 
-async function imageHtmlcode(src, alt, sizes) {
+async function imageHtmlcode(src, alt, css, sizes) {
     let metadata = await Image(src, {
         widths: [300, 600],
         outputDir: "./_site/img/",
@@ -19,6 +19,7 @@ async function imageHtmlcode(src, alt, sizes) {
     });
 
     let imageAttributes = {
+        class: css,
         alt,
         sizes,
         loading: "lazy",
@@ -27,6 +28,18 @@ async function imageHtmlcode(src, alt, sizes) {
 
     // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
     return Image.generateHTML(metadata, imageAttributes);
+}
+
+async function imageShortcode(src, size) {
+
+    let metadata = await Image(src, {
+        widths: [size],
+        outputDir: "./_site/img/",
+        formats: ["jpeg"]
+    });
+
+    let data = metadata.jpeg[metadata.jpeg.length - 1];
+    return data.url;
 }
 
 function generateImages(src, widths){
@@ -70,6 +83,7 @@ module.exports = function (eleventyConfig) {
 
 
     eleventyConfig.addNunjucksAsyncShortcode("image", imageHtmlcode);
+    eleventyConfig.addNunjucksAsyncShortcode("imageSrc", imageShortcode);
     eleventyConfig.addNunjucksAsyncShortcode("cssBackground", imageCssBackground);
 
     // Alias `layout: post` to `layout: layouts/post.njk`
