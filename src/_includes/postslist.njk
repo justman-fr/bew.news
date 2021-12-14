@@ -3,13 +3,10 @@
         <div class="container mx-auto">
             <div class="flex flex-wrap md:-mx-3">
                 {% for post in postslist | reverse %}
-
-
                   {% if post.data.card === 'image'%}
-
                       <div class="md:w-1/2 px-3 mb-6 w-full">
                           <a href="{{ post.url | url }}" class="flex w-full h-full flex-col flex-wrap bg-cover bg-no-repeat bg-center rounded overflow-hidden hover:scale-105 transition duration-500 "
-                             style="background-image:url({% imageSrc "./static/img/"~post.data.cover %})">
+                             style="background-image:url({% imageSrc "./static/img/"~post.data.cover, "400" %})">
                               <div class="bg-opacity-50 bg-black  p-5">
                               <h2 class="text-white text-lg mb-2">{{ post.data.title }}</h2>
                               <p class="text-white opacity-90">{{ post.data.subtitle }}</p>
@@ -27,13 +24,11 @@
                               </div>
                           </a>
                       </div>
-
                   {% else%}
-
                       <div class="md:w-1/2 px-3 mb-6 w-full">
                           <a href="{{ post.url | url }}" class="flex w-full h-full flex-wrap bg-gray-800 overflow-hidden rounded hover:scale-105 transition duration-500">
                               <div class="w-full sm:w-2/6">
-                                  {% if post.data.cover %} <img class="object-cover h-full w-full" src="{% imageSrc "./static/img/"~post.data.cover, "400" %}" alt="{{ post.data.title }}" />{% else %}
+                                  {% if post.data.cover %} <img class="object-cover h-full w-full" loading="lazy" decoding="async" src="{% imageSrc "./static/img/"~post.data.cover, "400" %}" alt="{{ post.data.title }}" />{% else %}
                                       <img class="object-cover h-full w-full"
                                            src="/assets/images/no-image.jpg" alt="">
                                   {% endif %}
@@ -60,10 +55,4 @@
             </div>
         </div>
     </div>
-
-
 </section>
-
-
-
-

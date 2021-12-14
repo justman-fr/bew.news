@@ -1,16 +1,13 @@
 ---
-title: Les CMS Headless
-subtitle: J'ai perdu la tête, depuis que j'ai vu Suzette
-description: Les CMS Headless ont le vent en poupe ces derniers temps. Nous allons voir ensemble
-date: 2021-12-11
+title: Votre veille technologique avec des flux RSS
+subtitle: Respectueuses de la vie privée
+description: This is a post on My Blog about agile frameworks.
+date: 2021-12-12
+author: Petit oiseau bleu
 card: image
-author: Dany Pas Brillant
-cover: headless-cms.jpg
+cover: lion.jpg
 tags:
-  - strapi
-  - headless
-  - directus
-  - cms
+  - site
 layout: layouts/post.njk
 ---
 

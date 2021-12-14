@@ -5,11 +5,11 @@ key: Accueil
 order: 1
 ---
 
-<div class="container  container mx-auto pt-24">
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<div class="container  container mx-auto pt-10 ">
+{% set maxPosts = collections.posts.length | min(8) %}
+<h1 class="text-gray-100 font-extrabold text-3xl text-center">A la une</h1>
 
-{% set postslist = collections.posts | head(-3) %}
+{% set postslist = collections.posts | head(-8) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
