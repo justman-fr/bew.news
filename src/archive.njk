@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 title: Articles
-permalink: /posts/
+permalink: /articles/
 eleventyNavigation:
   key: Articles
   order: 2
@@ -9,6 +9,6 @@ eleventyNavigation:
 <section class="container mt-12 mx-auto">
   <h1 class="dark:text-gray-100 font-extrabold text-3xl text-center">Nos articles</h1>
 
-{% set postslist = collections.posts %}
-{% include "postslist.njk" %}
+{% set articleslist = collections.articles %}
+{% include "articleslist.njk" %}
 </section>

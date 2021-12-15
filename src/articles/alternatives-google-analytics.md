@@ -1,14 +1,13 @@
 ---
-title: Votre veille technologique avec des flux RSS
+title: Les alternatives  à Google Analytics
 subtitle: Respectueuses de la vie privée
 description: This is a post on My Blog about agile frameworks.
 date: 2021-12-12
-author: Petit oiseau bleu
-
-cover: lion.jpg
+author: Don't be evil
+cover: alternatives-google-analytics.jpg
 tags:
   - site
-layout: layouts/post.njk
+layout: layouts/article.njk
 ---
 
 ## Un retour au source

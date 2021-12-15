@@ -1,12 +1,17 @@
 ---
-title: Lancement du site
-subtitle: Houston, on a un problème
-description: This is a post on My Blog about agile frameworks.
-date: 2021-11-13
-cover: earth.jpg
+title: Les CMS Headless
+subtitle: J'ai perdu la tête, depuis que j'ai vu Suzette
+description: Les CMS Headless ont le vent en poupe ces derniers temps. Nous allons voir ensemble
+date: 2021-12-11
+card: image
+author: Dany Pas Brillant
+cover: headless-cms.jpg
 tags:
-  - site
-layout: layouts/post.njk
+  - strapi
+  - headless
+  - directus
+  - cms
+layout: layouts/article.njk
 ---
 
 ## Un retour au source

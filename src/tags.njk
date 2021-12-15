@@ -19,8 +19,8 @@ permalink: /tags/{{ tag | slug }}/
 <section class="container mt-12 mx-auto">
 <h1 class="dark:text-gray-100 font-extrabold text-3xl text-center">Tous les articles pour le tag “{{ tag }}”</h1>
 
-{% set postslist = collections[ tag ] %}
-{% include "postslist.njk" %}
+{% set articleslist = collections[ tag ] %}
+{% include "articleslist.njk" %}
 
 <p>Voir <a href="{{ '/tags/' | url }}">tous les tags</a>.</p>
 

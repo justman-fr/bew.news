@@ -6,9 +6,9 @@ order: 1
 ---
 
 <div class="container  container mx-auto pt-10 ">
-    {% set maxPosts = collections.posts.length | min(8) %}
-    <h1 class="dark:text-gray-100 font-extrabold text-3xl text-center">A la une</h1>
-    {% set postslist = collections.posts | head(-8) %}
-    {% set postslistCounter = collections.posts | length %}
-    {% include "postslist.njk" %}
+    {% set maxPosts = collections.articles.length | min(8) %}
+    <h1 class="dark:text-gray-100 font-extrabold text-3xl text-center">Articles à la une</h1>
+    {% set articleslist = collections.articles | head(-8) %}
+    {% set articleslistCounter = collections.articles | length %}
+    {% include "articleslist.njk" %}
 </div>
