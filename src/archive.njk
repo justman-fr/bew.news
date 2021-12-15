@@ -1,12 +1,14 @@
 ---
 layout: layouts/home.njk
+title: Articles
 permalink: /posts/
 eleventyNavigation:
-  key: Actus
+  key: Articles
   order: 2
 ---
-
-<h1>Actus</h1>
+<section class="container mt-12 mx-auto">
+  <h1 class="dark:text-gray-100 font-extrabold text-3xl text-center">Nos articles</h1>
 
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+</section>

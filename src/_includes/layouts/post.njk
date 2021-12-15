@@ -63,42 +63,18 @@ templateClass: tmpl-post
                 </div>
             </div>
             <div class="inline-flex ">
-                <a class="mouse scroll" href="#content"></a>
+                <a class="mouse scroll" title="Voir l'article" href="#content"></a>
             </div>
         </div>
     </div>
 </section>
 
-
 <div class="container grid grid-flow-col grid-cols-auto xl:grid-cols-topbar max-w-content mx-auto pt-24 sm:p-6 px-4" >
-
-
     <article class="min-w-0" id="content">
         <a href="#content"></a>
-
     {{ content | safe }}
-
-    {%- if collections.posts %}
-        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-        {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-        {%- if nextPost or previousPost %}
-
-            <ul>
-                {%- if nextPost %}
-                    <li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-                {%- if previousPost %}
-                    <li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
-                    </li>{% endif %}
-            </ul>
-        {%- endif %}
-    {%- endif %}
-
     </article>
-
-
-
     <aside class="hidden xl:block w-150 ">
         {% include "src/_includes/components/toc.njk" %}
     </aside>
-
 </div>

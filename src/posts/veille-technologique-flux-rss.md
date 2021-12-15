@@ -4,7 +4,7 @@ subtitle: Respectueuses de la vie privée
 description: This is a post on My Blog about agile frameworks.
 date: 2021-12-12
 author: Petit oiseau bleu
-card: image
+
 cover: lion.jpg
 tags:
   - site

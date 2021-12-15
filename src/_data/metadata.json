@@ -1,20 +1,21 @@
 {
   "title": "Le Web à l'envers",
-  "url": "https://the-bew.fr/",
+  "url": "https://the-bew.com/",
   "language": "fr",
   "description": "I am writing about my experiences as a naval navel-gazer.",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://the-bew.fr/"
+    "id": "https://the-bew.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://the-bew.fr/feed/feed.json"
+    "url": "https://the-bew.com/feed/feed.json"
   },
   "author": {
     "name": "JustMan",
-    "url": "https://github.com/justman-fr"
+    "url": "https://github.com/justman-fr",
+    "repo": "justman-fr/the-bew"
   }
 }
