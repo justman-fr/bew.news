@@ -3,54 +3,17 @@
         <div class="container mx-auto">
             <div class="flex flex-wrap md:-mx-3">
                 {% for post in articleslist | reverse %}
-                  {% if post.data.card === 'image'%}
-                      <div class="md:w-1/2 px-3 mb-6 w-full">
-                          <a href="{{ post.url | url }}" class="flex w-full h-full flex-col flex-wrap bg-cover bg-no-repeat bg-center rounded overflow-hidden hover:scale-105 transition duration-500 "
-                             style="background-image:url({% imageSrc "./static/img/"~post.data.cover, "400" %})">
-                              <div class="bg-opacity-50 bg-black  p-5">
-                              <h2 class="text-white text-lg mb-2">{{ post.data.title }}</h2>
-                              <p class="text-white opacity-90">{{ post.data.subtitle }}</p>
-                              <div class="flex flex-wrap justify-between items-center mt-auto pt-6">
-                                  <div class="inline-flex items-center">
-                                      <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
-                                          <img src="https://randomuser.me/api/portraits/women/2.jpg"/>
-                                      </div>
-                                      <div class="flex-1 pl-2">
-                                          <p class="text-white mb-1">{% if post.data.author %}{{ post.data.author }}{% else %}JustMan{% endif %}</p>
-                                          <p class="text-white opacity-80 text-xs">{{ post.data.date | readableDate }}</p>
-                                      </div>
-                                  </div>
-                              </div>
-                              </div>
-                          </a>
-                      </div>
-                  {% else%}
-                      <div class="md:w-1/2 px-3 mb-6 w-full">
-                          <a href="{{ post.url | url }}" class="flex w-full h-full flex-wrap bg-gray-800 overflow-hidden rounded hover:scale-105 transition duration-500">
-                              <div class="w-full sm:w-2/6">
-                                  {% if post.data.cover %} <img class="object-cover h-full w-full" loading="lazy" decoding="async" src="{% imageSrc "./static/img/"~post.data.cover, "400" %}" alt="{{ post.data.title }}" />{% else %}
-                                      <img class="object-cover h-full w-full"
-                                           src="/assets/images/no-image.jpg" alt="">
-                                  {% endif %}
-                              </div>
-                              <div class="w-full sm:w-4/6 p-5">
-                                  <h2 class="text-white leading-normal text-lg mb-2">{{ post.data.title }} </h2>
-                                  <p class="text-white opacity-50">{{ post.data.subtitle }}</p>
-                                  <div class="flex flex-wrap justify-between items-center mt-6">
-                                      <div class="inline-flex items-center">
-                                          <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
-                                              <img src="https://randomuser.me/api/portraits/men/5.jpg"/>
-                                          </div>
-                                          <div class="flex-1 pl-2">
-                                              <p class="text-white mb-1">{% if post.data.author %}{{ post.data.author }}{% else %}JustMan{% endif %}</p>
-                                              <p class="text-white opacity-80 text-xs">{{ post.data.date | readableDate }}</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </a>
-                      </div>
-                  {% endif %}
+                    <div class="md:w-1/2 px-3 mb-6 w-full">
+                        <a href="{{ post.url | url }}"
+                           class="flex w-full h-full flex-col flex-wrap bg-cover bg-no-repeat bg-center rounded overflow-hidden hover:scale-105 transition duration-500 "
+                           style="{% if post.data.cover %}background-image:url({% imageSrc "./static/img/"~post.data.cover, "400" %}{% endif %})">
+                            <div class="bg-opacity-60 bg-black  p-5">
+                                <h2 class="text-white text-lg mb-2 ">{{ post.data.title }}</h2>
+                                <p class="text-white opacity-80 mb-2">{{ post.data.date | readableDate }}</p>
+                                <p class="text-white opacity-80">{{ post.data.description }}</p>
+                            </div>
+                        </a>
+                    </div>
                 {% endfor %}
             </div>
         </div>

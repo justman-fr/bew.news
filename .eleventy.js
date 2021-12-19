@@ -15,7 +15,12 @@ async function imageHtmlcode(src, alt, css, sizes) {
     let metadata = await Image(src, {
         widths: [300, 600],
         outputDir: "./_site/img/",
-        formats: ["avif", "jpeg"]
+        formats: ["avif", "jpeg"],
+        filenameFormat: function (id, src, width, format, options) {
+            const extension = path.extname(src);
+            const name = path.basename(src, extension);
+            return `${name}-${width}.${format}`;
+        }
     });
 
     let imageAttributes = {
@@ -35,7 +40,13 @@ async function imageShortcode(src, size) {
     let metadata = await Image(src, {
         widths: [size],
         outputDir: "./_site/img/",
-        formats: ["jpeg"]
+        urlPath: "/img/",
+        formats: ["jpeg"],
+        filenameFormat: function (id, src, width, format, options) {
+            const extension = path.extname(src);
+            const name = path.basename(src, extension);
+            return `${name}-${width}.${format}`;
+        }
     });
 
     let data = metadata.jpeg[metadata.jpeg.length - 1];
@@ -50,6 +61,11 @@ function generateImages(src, widths){
         outputDir: "./_site/img",
         urlPath: "/img/",
         useCache: true,
+        filenameFormat: function (id, src, width, format, options) {
+            const extension = path.extname(src);
+            const name = path.basename(src, extension);
+            return `${name}-${width}.${format}`;
+        },
         sharpJpegOptions: {
             quality: 80,
             progressive: true
@@ -139,7 +155,7 @@ module.exports = function (eleventyConfig) {
 
     function filterTagList(tags) {
         return (tags || []).filter(
-            (tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+            (tag) => ["all", "nav", "article", "articles"].indexOf(tag) === -1
         );
     }
 

@@ -245,11 +245,15 @@ h3 {
 
 
 article ol {
-    @apply list-decimal pl-10 leading-8;
+    @apply list-decimal pl-10 text-lg;
 }
 
 article ul {
-    @apply list-disc pl-10 leading-8;
+    @apply list-disc pl-10 pt-3 text-lg;
+}
+
+article li {
+    @apply pb-5;
 }
 
 table {
