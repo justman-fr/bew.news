@@ -1,14 +1,9 @@
 ---
-title: Les alternatives à Google Analytics
-subtitle: La pieuvre qui veut dominer notre vie privée
+title: Lancement du site
+subtitle: Houston, on a un problème...
 description: L'hégémonie de Google pour les statistiques des sites est alarmant. A travers cet article, nous verrons qu'elles sont les alternatives plus éthiques.
-date: 2022-01-02
-cover: alternatives-google-analytics/pieuvre-google.jpg
-tags:
-  - google analytics
-  - plausible
-  - matomo
-  - alternative google
+date: 2022-01-01
+cover: lancement-site/terre.jpg
 ---
 
 ## Un retour au source

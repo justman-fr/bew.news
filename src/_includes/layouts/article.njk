@@ -10,7 +10,7 @@ templateClass: tmpl-post
 </style>
 
 <section id="hero" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
-    <div class="h-screen bg-opacity-60 bg-black flex items-center justify-center" >
+    <div class="h-screen bg-opacity-60 bg-black flex items-center justify-center">
         <div class="mx-2 text-center">
             <h1 class="text-gray-100 font-extrabold text-2xl xs:text-5xl md:text-6xl">
                 {{ title }}
@@ -77,12 +77,14 @@ templateClass: tmpl-post
         <a href="#content"></a>
         {{ content | safe }}
         <div class="mt-10">
-           {% for tag in tags %}
-                {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-                <div class="inline-block p-2">
-                    <a alt="tag {{ tag }}" aria-label="tagged frontmatter" href="{{ tagUrl | url }}"
-                       class="px-4 py-2 text-sm text-gray-700 bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full hover:text-gray-800 hover:bg-gray-300">{{ tag }}</a>
-                </div>
+            {% for tag in tags %}
+                {% if tag != 'articles' %}
+                    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+                    <div class="inline-block p-2">
+                        <a alt="tag {{ tag }}" aria-label="tagged frontmatter" href="{{ tagUrl | url }}"
+                           class="px-4 py-2 text-sm text-gray-700 bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full hover:text-gray-800 hover:bg-gray-300">{{ tag }}</a>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </article>
