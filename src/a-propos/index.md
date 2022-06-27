@@ -7,7 +7,7 @@ description: Test
 hero: a-propos/matrix.jpg
 eleventyNavigation:
   key: A propos
-  order: 3
+  order: 4
 ---
 
 ## C'est l'histoire d'une passion...

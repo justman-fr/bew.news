@@ -1,0 +1,20 @@
+---
+layout: layouts/home.njk
+title: Articles
+pagination:
+  data: collections.articles
+  size: 12
+  alias: articles
+permalink: "articles/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyNavigation:
+  key: Articles
+  order: 2
+---
+<section class="container mt-12 mx-auto">
+  <h1 class="dark:text-gray-100 text-3xl text-center">Nos articles</h1>
+
+{% set articleslist = articles %}
+{% include "articleslist.njk" %}
+</section>
+
+ {% include "components/pagination.njk" %}

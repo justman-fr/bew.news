@@ -7,8 +7,16 @@ order: 1
 
 <div class="container  container mx-auto pt-10 ">
     {% set maxPosts = collections.articles.length | min(8) %}
-    <h1 class="dark:text-gray-100 font-extrabold text-3xl text-center">Articles à la une</h1>
+    <h1 class="dark:text-gray-100 text-3xl text-center">Articles à la une</h1>
     {% set articleslist = collections.articles | head(-8) %}
+    {% set articleslistCounter = collections.articles | length %}
+    {% include "articleslist.njk" %}
+</div>
+
+<div class="container  container mx-auto pt-10 ">
+    {% set maxPosts = collections.articles.length | min(8) %}
+    <h1 class="dark:text-gray-100 text-3xl text-center">Tutos à la une</h1>
+    {% set articleslist = collections.tutos | head(-8) %}
     {% set articleslistCounter = collections.articles | length %}
     {% include "articleslist.njk" %}
 </div>

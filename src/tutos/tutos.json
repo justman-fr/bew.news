@@ -1,0 +1,7 @@
+{
+  "tags": [
+    "tutos"
+  ],
+  "layout": "layouts/article.njk",
+  "author": "JustMan"
+}

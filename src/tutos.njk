@@ -1,0 +1,21 @@
+---
+layout: layouts/home.njk
+title: Tutos
+
+pagination:
+  data: collections.tutos
+  size: 12
+  alias: tutos
+permalink: "tutos/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
+eleventyNavigation:
+  key: Tutos
+  order: 3
+---
+<section class="container mt-12 mx-auto">
+  <h1 class="dark:text-gray-100 text-3xl text-center">Nos tutorials</h1>
+
+{% set articleslist = tutos %}
+{% include "articleslist.njk" %}
+</section>
+
+ {% include "components/pagination.njk" %}
